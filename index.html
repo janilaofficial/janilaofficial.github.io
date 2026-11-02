@@ -39,8 +39,32 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.5);
             text-align: center;
         }
-        a { color: var(--orange); text-decoration: none; font-weight: bold; }
-        a:hover { color: var(--white); }
+        
+        /* Social Links CSS */
+        .social-links {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+        .social-btn {
+            background-color: var(--dark-bg);
+            color: var(--orange);
+            border: 2px solid var(--orange);
+            padding: 12px 20px;
+            border-radius: 8px;
+            width: 280px;
+            text-align: center;
+            font-size: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .social-btn:hover {
+            background-color: var(--orange);
+            color: var(--dark-bg);
+        }
         
         footer {
             text-align: center;
@@ -59,11 +83,24 @@
     <div class="container">
         <h2>Welcome to My New Space</h2>
         <p>This is my custom portfolio built with pure HTML & CSS, hosted seamlessly on GitHub Pages.</p>
-        <p>No more Blogger restrictions. Complete control over my code.</p>
+        
+        <div class="social-links">
+            <!-- Personal Facebook -->
+            <a href="https://www.facebook.com/janilaofficial" target="_blank" class="social-btn">Janila Dissanayake</a>
+            
+            <!-- Iconic LK Facebook -->
+            <a href="https://www.facebook.com/iconiclk.srilanka" target="_blank" class="social-btn">Iconic LK Page</a>
+            
+            <!-- Email -->
+            <a href="mailto:ව්janilaprabashwaraofficial@gmail.com" class="social-btn">Email Me</a>
+            
+            <!-- WhatsApp -->
+            <a href="https://wa.me/94718892936" target="_blank" class="social-btn">WhatsApp</a>
+        </div>
     </div>
 
     <footer>
-        &copy; 2026 Janila Prabashwara. Engineered by Janila.
+        &copy; 2025 Janila Prabashwara. Engineered by Janila.
     </footer>
 </body>
 </html>
